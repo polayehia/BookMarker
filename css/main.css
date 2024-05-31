@@ -1,0 +1,72 @@
+.home .info table th {
+    display: flex;
+    align-items: center;
+}
+.home{
+    background-color:#F7ECDE ;
+}
+ h1{
+    font-family: Pacifico;
+
+}
+button{
+    width: 150px;
+}
+
+
+
+.home-title h1{
+    position: relative;
+}
+.home-title h1::before{
+    position: absolute;
+    content: '';
+    width: 19%;
+    height: 15px;
+    background-color: #ff9d00 ;
+    bottom: 0;
+    opacity: 0.7;
+    transition: all .5s;
+}
+.home-title h1:hover::before{
+   
+   
+    height: 30px;
+    
+}
+h2{
+    font-family: "Righteous", sans-serif;
+}
+.form-control:focus {
+  
+    box-shadow: 0 0 0 .25rem rgb(242 183 106);
+   
+}
+::selection {
+    background-color: #ff9d00;
+  }
+
+  .body{
+     border-width: 3px 0 3px 0;
+     border-style: dotted  ;
+     border-color:  #ff9d00;
+  }
+  .change-color{
+    /* color: rgb(38, 134, 38) ; */
+    color:#60a362 ;
+  }
+  .change-color .first{
+    color:#5ca362;
+  }
+  .change-color .second{
+    color:#b1ac58;
+  }
+  .change-color span{
+    color: #a5ab5a;
+  }
+  .remove-line{
+    text-decoration: none;
+  }
+  a{
+    text-decoration: none;
+  }

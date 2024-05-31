@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+<div class="home d-flex align-items-center vh-100">
+ <div class="container">
+  <div class="row">
+    <div class="home-title text-center ">
+        <h1  >Bookmarker</h1>
+      
+    </div>
+    <div class="body my-5 ">
+      <div class="title text-center">
+        <h4 class="my-4  change-color"><i class="fa-solid fa-bookmark mx-2 first"></i>Bookmark your <span>favorite sites</span> <i class="fa-solid fa-bookmark mx-2 second"></i></h4>
+      </div>
+      <div class="inupt-form">
+        <div class="mb-3">
+          <label for="site"  class="form-label fw-bold"> <i class="fa-solid fa-book-bookmark px-2"></i>Site Name</label>
+          <input type="text" class="form-control" oninput="valdation(this)" id="site" placeholder="Bookmark Name">
+          <div class="alert py-0 col-4 mt-1 alert-danger d-none">
+            <small id="one">Site name must contain at least 3 characters</small>
+            
+          </div>
+        </div>
+        <div class=""></div>
+        <div class="mb-3">
+          <label for="url"  class="form-label fw-bold"> <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+          <input type="url" class="form-control " oninput="valdation(this)" id="url" placeholder="Website URL">
+          <div class=" py-0 col-4 mt-1 alert alert-danger d-none">
+            <small id="two" >Site URL must be a valid one</small>
+          </div>
+        </div>
+        <button  type="button" id="addbtn" onclick="addInfo()" class="btn   m-auto d-block   btn-warning   my-5">submit</button>
+        <button  type="button" id="updatebtn" onclick="updatelist()" class="btn d-none   m-auto    btn-warning   my-5">UpDate</button>
+      </div>
+      <div class="main-table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">
+                Index</th>
+                <th scope="col">Website</th>
+                <th scope="col">Visit</th>
+              <th scope="col">Delete</th>
+              <th scope="col">Edite</th>
+            </tr>
+          </thead>
+          <tbody id="here" class="table-group-divider">
+            
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+  </div>
+ </div>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
